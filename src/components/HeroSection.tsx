@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Phone, ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroBg from "@works/house_work.png";
 
 const PHONE_TEL = "tel:2410550284";
 
@@ -13,16 +12,13 @@ const HeroSection = () => {
     >
       {/* Background Effects */}
       <div className="absolute inset-0">
-        {/* Background image (subtle) */}
-        <img
-          src={heroBg}
-          alt=""
-          aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover opacity-[0.08] blur-[1px] scale-105"
-          loading="eager"
-        />
+        {/* Electric "lights" background */}
+        <div className="absolute inset-0 hero-lights-bg" aria-hidden="true" />
+        <div className="absolute inset-0 hero-lights-beams" aria-hidden="true" />
+        <div className="absolute inset-0 hero-lights-grain" aria-hidden="true" />
+
         {/* Dark overlay for readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/55 to-background" />
 
         {/* Gradient orbs */}
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float" />

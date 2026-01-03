@@ -124,4 +124,45 @@
     @apply -translate-y-1;
     box-shadow: 0 20px 40px -15px hsl(var(--electric-amber) / 0.2);
   }
+
+  /* Hero "electric lights" background (CSS-only, no external assets) */
+  .hero-lights-bg {
+    background:
+      radial-gradient(900px circle at 25% 35%, hsl(var(--secondary) / 0.22) 0%, transparent 55%),
+      radial-gradient(1100px circle at 75% 55%, hsl(var(--primary) / 0.22) 0%, transparent 60%),
+      radial-gradient(900px circle at 55% 20%, hsl(var(--electric-amber) / 0.16) 0%, transparent 55%),
+      conic-gradient(from 215deg at 50% 50%,
+        transparent 0deg,
+        hsl(var(--secondary) / 0.08) 20deg,
+        transparent 55deg,
+        hsl(var(--primary) / 0.10) 85deg,
+        transparent 120deg,
+        hsl(var(--electric-amber) / 0.08) 160deg,
+        transparent 220deg,
+        hsl(var(--secondary) / 0.06) 260deg,
+        transparent 360deg
+      ),
+      linear-gradient(180deg, hsl(240 10% 6%) 0%, hsl(240 10% 3.9%) 70%, hsl(240 10% 3.9%) 100%);
+    background-size: cover;
+    background-position: center;
+    filter: saturate(1.15) contrast(1.05);
+  }
+
+  .hero-lights-beams {
+    background:
+      linear-gradient(115deg, transparent 0%, hsl(var(--secondary) / 0.12) 32%, transparent 55%),
+      linear-gradient(65deg, transparent 10%, hsl(var(--primary) / 0.10) 38%, transparent 60%),
+      linear-gradient(135deg, transparent 0%, hsl(var(--electric-amber) / 0.10) 28%, transparent 52%);
+    mix-blend-mode: screen;
+    opacity: 0.7;
+    filter: blur(0.5px);
+  }
+
+  .hero-lights-grain {
+    background-image:
+      repeating-linear-gradient(0deg, hsl(var(--foreground) / 0.02) 0px, transparent 2px, transparent 6px),
+      repeating-linear-gradient(90deg, hsl(var(--foreground) / 0.015) 0px, transparent 3px, transparent 7px);
+    opacity: 0.35;
+    mix-blend-mode: overlay;
+  }
 }
