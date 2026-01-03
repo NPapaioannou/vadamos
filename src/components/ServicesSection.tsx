@@ -82,16 +82,17 @@ const ServicesSection = () => {
           viewport={{ once: true }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
-          {services.map((service, index) => {
+          {services.map((service) => {
             const Icon = service.icon;
             const isLarge = service.size === "large";
             const accentColor = service.accent === "primary" ? "primary" : "secondary";
             
             return (
-              <motion.div
+              <motion.a
                 key={service.title}
                 variants={itemVariants}
-                className={`group glass-card p-8 hover-lift cursor-pointer ${
+                href="#contact"
+                className={`group relative block glass-card p-8 hover-lift cursor-pointer ${
                   isLarge ? "md:col-span-2 lg:col-span-3" : ""
                 }`}
                 whileHover={{ scale: 1.02 }}
@@ -134,7 +135,7 @@ const ServicesSection = () => {
                     accentColor === "primary" ? "electric-glow" : "volt-glow"
                   }`}
                 />
-              </motion.div>
+              </motion.a>
             );
           })}
         </motion.div>

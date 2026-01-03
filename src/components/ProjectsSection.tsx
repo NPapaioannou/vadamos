@@ -98,10 +98,13 @@ const ProjectsSection = () => {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {projects.map((project, index) => (
-            <motion.div
+            <motion.a
               key={`${project.title}-${index}`}
               variants={itemVariants}
               className="group relative aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer hover-lift"
+              href={project.image}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {/* Image */}
               <img
@@ -132,7 +135,7 @@ const ProjectsSection = () => {
 
               {/* Border glow */}
               <div className="absolute inset-0 rounded-2xl border border-primary/0 group-hover:border-primary/30 transition-colors duration-300" />
-            </motion.div>
+            </motion.a>
           ))}
         </motion.div>
       </div>

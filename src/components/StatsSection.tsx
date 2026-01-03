@@ -4,7 +4,7 @@ import { Clock, Briefcase, Award } from "lucide-react";
 const stats = [
   {
     icon: Clock,
-    value: "20+",
+    value: "30+",
     label: "Χρόνια Εμπειρίας",
   },
   {

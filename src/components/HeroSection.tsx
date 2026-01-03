@@ -49,7 +49,7 @@ const HeroSection = () => {
           >
             <Sparkles className="w-4 h-4 text-primary" />
             <span className="text-sm text-muted-foreground">
-              Πιστοποιημένοι Ηλεκτρολόγοι με 20+ χρόνια εμπειρίας
+              Πιστοποιημένοι Ηλεκτρολόγοι με 30+ χρόνια εμπειρίας
             </span>
           </motion.div>
 
@@ -97,9 +97,12 @@ const HeroSection = () => {
               size="lg"
               variant="outline"
               className="border-glass-border bg-card/40 hover:bg-card/60 text-foreground font-semibold px-8 py-6 text-lg group"
+              asChild
             >
-              Δείτε τα έργα μας
-              <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+              <a href="#projects">
+                Δείτε τα έργα μας
+                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+              </a>
             </Button>
           </motion.div>
 
