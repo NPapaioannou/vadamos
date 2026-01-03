@@ -46,7 +46,7 @@ const Header = () => {
               <img
                 src={adamosLogo}
                 alt="ΑΔΑΜΟΣ ΒΑΣΙΛΗΣ"
-                className="w-14 h-14 lg:w-16 lg:h-16 object-contain"
+                className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 object-contain"
                 loading="eager"
               />
               <div className="absolute inset-0 blur-lg bg-primary/40 animate-glow-pulse" />
