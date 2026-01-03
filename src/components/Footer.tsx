@@ -185,14 +185,6 @@ const Footer = () => {
         <div className="pt-8 border-t border-glass-border">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
             <p>© {currentYear} ΑΔΑΜΟΣ ΒΑΣΙΛΗΣ Electrical Applications. Όλα τα δικαιώματα κατοχυρωμένα.</p>
-            <div className="flex items-center gap-6">
-              <a href="#" className="hover:text-primary transition-colors duration-200">
-                Πολιτική Απορρήτου
-              </a>
-              <a href="#" className="hover:text-primary transition-colors duration-200">
-                Όροι Χρήσης
-              </a>
-            </div>
           </div>
         </div>
       </div>
