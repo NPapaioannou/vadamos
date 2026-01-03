@@ -35,7 +35,7 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24 lg:h-28">
           {/* Logo */}
           <motion.a
             href="#hero"
@@ -46,7 +46,7 @@ const Header = () => {
               <img
                 src={adamosLogo}
                 alt="ΑΔΑΜΟΣ ΒΑΣΙΛΗΣ"
-                className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 object-contain"
+                className="w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 object-contain"
                 loading="eager"
               />
               <div className="absolute inset-0 blur-lg bg-primary/40 animate-glow-pulse" />
